@@ -1,39 +1,43 @@
 import React from 'react'
 import { OpinionContainer, OpinionContainer1, OpinionContainer2, OpinionContainer3,
-    OpinionContainer4, OpinionContainer5,OpinionContainer6, 
-    OpinionContainer7,BgInfo,BgWaveInfo,OpinionContainer8,OpinionH1, OpinionP } from './OpinionElements'
+    OpinionTitle, OpinionContainer5, 
+    ImagePhoto,BgInfo,BgWaveInfo,OpinionH1,OpinionH2, OpinionP } from './OpinionElements'
 
 const Opinion = () => {
   return (
     <OpinionContainer id="Last">
         <BgWaveInfo></BgWaveInfo>
         <BgInfo>
-        <OpinionContainer4>
+        <OpinionTitle>
             <OpinionH1>Lo que los expertos<br/> opinan de Quizzes</OpinionH1>
-        </OpinionContainer4>
+        </OpinionTitle>
         <OpinionContainer1>
+        <ImagePhoto src='https://i.ibb.co/xHCjSpj/marce.jpg'/>
             <OpinionP>
-                <b>Marcela Portillo</b><br/>
-                Con Go Quizz aprendi a bañarme
+                <OpinionH2>Marcela Portillo<br/></OpinionH2>
+                "Con Go Quizz aprendi a bañarme"
             </OpinionP>
         </OpinionContainer1>
         <OpinionContainer2>
+            <ImagePhoto src='https://i.ibb.co/2PYLDjT/katya.jpg'/>
             <OpinionP>
-                <b>Katya Agustin</b><br/>
+                <OpinionH2>Katya Agustin<br/></OpinionH2>
                 Gracias a Go Quizz tengo 3 doctorados y 2 maestrias
 
             </OpinionP>
         </OpinionContainer2>
         <OpinionContainer3>
+            <ImagePhoto src='https://i.ibb.co/CmYt82N/nicky.jpg'/>
             <OpinionP>
-                <b>Nicky</b><br/>
+               <OpinionH2> Nicky<br/></OpinionH2>
                 Gracias a Go Quizz soy mas guapo de lo que ya soy
 
             </OpinionP>
         </OpinionContainer3>
         <OpinionContainer5>
+            <ImagePhoto src='https://i.ibb.co/9Wrr44S/omar.jpg'/>
             <OpinionP>
-                <b>Omar Escamilla</b><br/>
+                <OpinionH2>Omar Escamilla<br/></OpinionH2>
                 Todos los recreos ocupaba Go quizz
 
             </OpinionP>

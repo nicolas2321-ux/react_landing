@@ -9,6 +9,9 @@ padding: 0 30px;
 height: 1200px;
 position:relative;
 z-index:1;
+@media screen and (max-width:768px) {
+    height:1300px;
+}
 
 `
 
@@ -49,42 +52,57 @@ padding: 8px 24px;
 display: flex;
 flex-direction: column;
 align-items: center;
+@media screen and (max-width:768px) {
+    top:100px;
+}
+@media screen and (max-width:480px) {
+        top:50px;
+        left:10px;
+    }
 `
-
-export const InfoSelector2 = styled.div`
-    grid-area: 4 / 2 / 5 / 3;
-`
-
-export const InfoSelector3 = styled.div`
-    grid-area: 3 / 4 / 4 / 5;
-    `
 export const InfoSelector4 = styled.div`
       z-index:3;
 max-width:1200px;
-left:700px;
+left:550px;
 bottom:200px;
 position:absolute;
 padding: 8px 24px;
 display: flex;
 flex-direction: column;
 align-items: center;
+@media screen and (max-width:768px) {
+    top:600px;
+    left:50px;
+}
+@media screen and (max-width:480px) {
+        left:10px;
+    }
 `
-export const InfoSelector5 = styled.div`
+export const InfoTitle = styled.div`
      z-index:3;
 
 top:50px;
 position:absolute;
 padding: 8px 24px;
-display: flex;
+display: flex;@media screen and (max-width:768px) {
+    top:-50px;
+}
+@media screen and (max-width:480px) {
+        height:10px;
+    }
 `
 export const Image = styled.img`
 
 object-fit: fill;
 max-height:500px;
 max-width:500px;
-position:relative;
-left:-50px;
-top:300px;
+
+display: flex;
+@media screen and (max-width:768px) {
+    max-height:300px;
+    max-width:300px;
+    
+}
 `
 export const Image1 = styled.img`
 
@@ -92,6 +110,34 @@ object-fit: fill;
 max-height:500px;
 max-width:500px;
 position:relative;
+
+@media screen and (max-width:768px) {
+    max-height:300px;
+    max-width:300px;
+    
+}
+`
+export const ImageDiv = styled.div`
+position:relative;
+left:-100px;
+top:250px;
+@media screen and (max-width:768px) {
+    top:-200px;
+    left:100px;
+    
+}
+@media screen and (max-width:480px) {
+       top:-250px;
+       left:90px;
+    }
+`
+export const ImageDiv_second = styled.div`
+position:relative;
 left:100px;
 top:-150px;
+@media screen and (max-width:768px) {
+    top:350px;
+    left:-60px;
+    
+}
 `

@@ -9,7 +9,10 @@ padding: 0 30px;
 height: 1000px;
 position:relative;
 background:gray;
-overflow:hidden
+overflow:hidden;
+@media screen and (max-width:768px) {
+    height:1300px;
+}
 `;
 export const BgWaveInfo = styled.div`
 background-image: url("https://i.ibb.co/QXZTL31/waveup.jpg");
@@ -37,6 +40,15 @@ top: 200px;
 
 background: #85EA9B;
 border-radius: 15px;
+@media screen and (max-width:768px) {
+    left:50px
+}
+@media screen and (max-width:480px) {
+        left:10px;
+        width: 200px;
+        height: 230px;
+    }
+
 `
 export const OpinionContainer2 = styled.div`
 position: absolute;
@@ -46,6 +58,16 @@ left: 389px;
 top: 450px;
 background: #FFA895;
 border-radius: 15px;
+@media screen and (max-width:768px) {
+    left:350px;
+    top:200px;
+}
+@media screen and (max-width:480px) {
+        left:235px;
+        width: 200px;
+        height: 230px;
+    }
+
 `
 export const OpinionContainer3 = styled.div`
 position: absolute;
@@ -56,9 +78,19 @@ top: 200px;
 
 background: #FCC44A;
 border-radius: 15px;
+@media screen and (max-width:768px) {
+    left:50px;
+    top:600px;
+}
+@media screen and (max-width:480px) {
+        left:10px;
+        top:500px;
+        width: 200px;
+        height: 230px;
+    }
 `
 
-export const OpinionContainer4 = styled.div`
+export const OpinionTitle = styled.div`
 position: absolute;
 width: 642px;
 height: 150px;
@@ -75,6 +107,12 @@ align-items: center;
 text-align: center;
 
 color: #003844;
+@media screen and (max-width:768px) {
+    left:175px
+}
+@media screen and (max-width:480px) {
+        left:100px;
+    }
 
 
     
@@ -88,7 +126,16 @@ top: 450px;
 
 background: #FFAEED;
 border-radius: 15px;
-
+@media screen and (max-width:768px) {
+    left:350px;
+    top:600px;
+}
+@media screen and (max-width:480px) {
+        left:235px;
+        top:500px;
+        width: 200px;
+        height: 230px;
+    }
 `
 
 export const OpinionH1 = styled.h1`
@@ -116,3 +163,28 @@ max-width: 600px;
     font-size:18px;
 }
 `
+
+export const ImagePhoto = styled.img`
+object-fit:fill;
+max-width: 60px;
+max-height:60px;
+top:30px;
+left:80px;
+margin-bottom:25px;
+position:relative;
+border-radius:50%;
+
+`
+export const OpinionH2 = styled.h2`
+color: #000;
+font-weight:bold;
+font-size:28px;
+text-align:center;
+
+@media screen and (max-width:768px) {
+    font-size:16px;
+}
+@media screen and (max-width:480px) {
+    font-size:12px;
+}
+`;

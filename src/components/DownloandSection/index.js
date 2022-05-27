@@ -17,10 +17,9 @@ const Downloand = () => {
         <DownloandH1>Moderniza tu estudio<br/> con GoQuizz
         
         </DownloandH1>
-        <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>
+        <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' id="downloand">
             <Button  onMouseEnter={onHover} onMouseLeave={onHover}>
-             Descargar
-            
+            Descargar
             {hover ? <ArrowRight/> : <ArrrowForward/>}
 
             </Button>

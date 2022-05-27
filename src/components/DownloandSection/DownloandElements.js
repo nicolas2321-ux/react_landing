@@ -11,7 +11,11 @@ padding: 0 30px;
 height: 800px;
 position:relative;
 z-index:1;
+@media screen and (max-width:768px) {
+    height:1000px;
+}
 `;
+
 
 export const Bgnormal = styled.div`
 background: rgb(133,231,234);
@@ -28,7 +32,11 @@ height:30%;
 position:absolute;
 top:560px;
 background-size:cover;
-overflow:hidden
+overflow:hidden;
+@media screen and (max-width:768px) {
+    top: 700px;
+}
+
 
 `
 
@@ -43,6 +51,9 @@ padding: 8px 24px;
 display: flex;
 flex-direction: column;
 align-items: center;
+@media screen and (max-width:768px) {
+    top:5%;
+}
 `;
 
 
@@ -108,5 +119,11 @@ max-height:500px;
 max-width:500px;
 position:relative;
 left:600px;
-top:-450px;
+top:-380px;
+@media screen and (max-width:768px) {
+    max-height:300px;
+    max-width:300px;
+    left:10px;
+    top:80%;
+}
 `
